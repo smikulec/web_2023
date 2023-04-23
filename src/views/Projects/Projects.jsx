@@ -16,8 +16,13 @@ const ProjectCard = ({ projectImage, title, text, link }) => {
         sx={{
           position: "relative",
           boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
-
           "&:hover": { boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px" },
+          "&:first-child": {
+            mb: { xs: 1, md: 0 },
+          },
+          "&:last-child": {
+            mt: { xs: 1, md: 0 },
+          },
         }}
       >
         <Box sx={{ position: "relative" }}>
@@ -27,9 +32,10 @@ const ProjectCard = ({ projectImage, title, text, link }) => {
               alt={title}
               style={{
                 display: "block",
-                maxHeight: "255px",
-                maxWidth: "420px",
                 width: "100%",
+                maxHeight: "255px",
+                //  maxWidth: "420px",
+                borderRadius: "4px 4px 0 0",
               }}
             />
           </Box>
