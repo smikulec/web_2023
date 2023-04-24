@@ -1,8 +1,8 @@
 import { Box, Paper, Stack, Typography, useMediaQuery } from "@mui/material";
 import { Layout } from "../../components";
 import { forwardRef } from "react";
-import chatAppImage from "../../assets/images/chat_app_screenshot.jpg";
-import pomodoroAppImage from "../../assets/images/pomodoro_app_screenshot.jpg";
+import chatAppImage from "../../assets/images/chat_01.png";
+import pomodoroAppImage from "../../assets/images/pomodoro_02.png";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ projectImage, title, text, link }) => {
@@ -23,6 +23,7 @@ const ProjectCard = ({ projectImage, title, text, link }) => {
           "&:last-child": {
             mt: { xs: 1, md: 0 },
           },
+          height: "100%",
         }}
       >
         <Box sx={{ position: "relative" }}>
@@ -68,7 +69,7 @@ export const Projects = forwardRef((props, ref) => {
             <ProjectCard
               projectImage={pomodoroAppImage}
               title="Pomodoro App"
-              text="A simple pomodoro app to track focus and productivity. Pomodoro sessions are customizable and there is a track record of completed and ucompleted tasks."
+              text="A simple pomodoro app to track focus and productivity. Pomodoro sessions are customizable and there's a track record of completed and uncompleted tasks."
               link="pomodoro-app"
             />
             <ProjectCard
