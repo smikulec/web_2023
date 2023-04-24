@@ -23,6 +23,9 @@ import JavascriptLogo from "../../assets/logos/javascript_logo.svg";
 import WebpackLogo from "../../assets/logos/webpack_logo.png";
 import SaSSLogo from "../../assets/logos/sass_logo.png";
 
+import chatAppFront from "../../assets/images/chat_04.png";
+import chatAppSide from "../../assets/images/chat_03.png";
+
 const technologiesArray = [
   { text: "HTML", icon: HTMLLogo },
   { text: "CSS", icon: CSSLogo },
@@ -95,6 +98,18 @@ export const ChatApp = () => {
                 "This chat app was a final project in a frontend developer program.",
               ]}
             />
+            <Stack direction={isMobile ? "column" : "row"} sx={{ pb: 4 }}>
+              <img
+                src={chatAppFront}
+                alt="laptop with a screen"
+                style={{ width: "100%", padding: "10px" }}
+              />
+              <img
+                src={chatAppSide}
+                alt="laptop with a screen"
+                style={{ width: "100%", padding: "10px" }}
+              />
+            </Stack>
             <Box sx={{ pb: 6 }}>
               <Typography variant="h4" color="secondary" sx={{ mb: 3 }}>
                 Technologies

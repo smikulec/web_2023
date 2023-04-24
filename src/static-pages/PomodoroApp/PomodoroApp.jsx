@@ -19,6 +19,9 @@ import ReactLogo from "../../assets/logos/react_logo.svg";
 import FirebaseLogo from "../../assets/logos/firebase_logo.png";
 import MUILogo from "../../assets/logos/mui_logo.png";
 
+import pomodoroAppFront from "../../assets/images/pomodoro_04.png";
+import pomodoroAppSide from "../../assets/images/pomodoro_03.png";
+
 const technologiesArray = [
   { text: "ReactJS", icon: ReactLogo, url: "https://react.dev/" },
   { text: "Material UI", icon: MUILogo, url: "https://mui.com/" },
@@ -89,6 +92,18 @@ export const PomodoroApp = () => {
                 "As everyone's attention and ability to focus is different and can be improved over time, I made sure that all the Pomodoro parameters were customizable when creating a task. Additionally, I included a simple statistics dashboard so users can track their focus time in different time periods.",
               ]}
             />
+            <Stack direction={isMobile ? "column" : "row"} sx={{ pb: 4 }}>
+              <img
+                src={pomodoroAppFront}
+                alt="laptop with a screen"
+                style={{ width: "100%", padding: "10px" }}
+              />
+              <img
+                src={pomodoroAppSide}
+                alt="laptop with a screen"
+                style={{ width: "100%", padding: "10px" }}
+              />
+            </Stack>
             <Box sx={{ pb: 6 }}>
               <Typography variant="h4" color="secondary" sx={{ mb: 3 }}>
                 Technologies
