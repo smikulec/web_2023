@@ -23,7 +23,7 @@ const ProjectCard = ({ projectImage, title, text, link }) => {
           "&:last-child": {
             mt: { xs: 1, md: 0 },
           },
-          height: "100%",
+          height: { md: "100%" },
         }}
       >
         <Box sx={{ position: "relative" }}>
