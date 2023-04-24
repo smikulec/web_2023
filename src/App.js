@@ -19,7 +19,7 @@ import {
 } from "@mui/material";
 import { ChatApp } from "./static-pages/ChatApp";
 import { PomodoroApp } from "./static-pages/PomodoroApp";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 const Main = () => {
   const homeSectionRef = useRef(null);
@@ -29,6 +29,16 @@ const Main = () => {
   const skillsSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash.includes("Projects")) {
+      projectsSectionRef.current.scrollIntoView({
+        behavior: "instant",
+        block: "start",
+      });
+    }
+  }, []);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });

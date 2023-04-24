@@ -52,7 +52,7 @@ export const PomodoroApp = () => {
       <Box>
         <main>
           <SimpleContainer>
-            <Link to="/">
+            <Link to="/#Projects">
               <IconButton sx={{ mt: 3, fontSize: "45px" }}>
                 <Icon icon={arrowLeftIcon} style={{ color: "#191970" }} />
               </IconButton>
