@@ -96,12 +96,22 @@ export const PomodoroApp = () => {
               <img
                 src={pomodoroAppFront}
                 alt="laptop with a screen"
-                style={{ width: "100%", padding: "10px" }}
+                style={{
+                  width: "100%",
+                  padding: "10px",
+                  display: "block",
+                  borderRadius: "15px",
+                }}
               />
               <img
                 src={pomodoroAppSide}
                 alt="laptop with a screen"
-                style={{ width: "100%", padding: "10px" }}
+                style={{
+                  width: "100%",
+                  padding: "10px",
+                  display: "block",
+                  borderRadius: "15px",
+                }}
               />
             </Stack>
             <Box sx={{ pb: 6 }}>
