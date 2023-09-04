@@ -12,18 +12,6 @@ export const Contact = forwardRef((props, ref) => {
 				<Layout.Title text='Contact me' />
 				<Layout.Content>
 					<Box>
-						{/* <Typography paragraph>
-					I am passionate about making a positive impact on people's lives, and
-					I believe that health tech is the perfect field for me to do so. I am
-					currently seeking new opportunities where I can leverage my skills and
-					experience to make a meaningful difference in the industry.
-				</Typography> */}
-						{/* <Typography paragraph>
-						I am currently seeking new opportunities where I can leverage my
-						unique background, passion for healthcare, and expertise in frontend
-						development to create innovative solutions that improve people's
-						lives.
-					</Typography> */}
 						<Typography paragraph sx={{ fontSize: '18px' }}>
 							If you're looking for a person with a diverse skill set spanning
 							across disciplines, a passion for healthcare, and a strong work

@@ -23,11 +23,11 @@ const Layout = ({ children }) => {
 	const isMobile = useMediaQuery('(max-width: 1024px)');
 
 	if (isMobile) {
-		return <Container sx={{ padding: '80px 0' }}>{children}</Container>;
+		return <Container sx={{ padding: '60px 0' }}>{children}</Container>;
 	}
 
 	return (
-		<Grid container sx={{ padding: '110px 0' }}>
+		<Grid container sx={{ padding: '80px 0' }}>
 			{children}
 		</Grid>
 	);

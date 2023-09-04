@@ -31,7 +31,7 @@ const Main = () => {
 	const contactSectionRef = useRef(null);
 
 	const scrollToSection = (ref) => {
-		ref.current.scrollIntoView({ behavior: 'smooth' });
+		ref.current.scrollIntoView({ block: 'center', behavior: 'smooth' });
 	};
 
 	const navigationContent = [

@@ -38,7 +38,7 @@ export const Skills = forwardRef((props, ref) => {
 			<Layout>
 				<Layout.Title text='Skills'></Layout.Title>
 				<Layout.Content>
-					<Box /*sx={{ marginLeft: !isMobile && '-45px' }} */>
+					<Box>
 						<Grid container spacing={7}>
 							{skillsArray.map((skill, index) => (
 								<Grid key={index} item xs={isMobile ? 4 : 3}>

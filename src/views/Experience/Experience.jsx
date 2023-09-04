@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 
 const SingleSection = ({ role, timeline, company, description }) => {
 	return (
-		<Box sx={{ pb: 6 }}>
+		<Box sx={{ pb: 6, '&:last-child': { pb: 0 } }}>
 			<Typography variant='h4' sx={{ pb: 1 }}>
 				{role}
 			</Typography>
